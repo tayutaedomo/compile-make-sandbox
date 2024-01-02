@@ -1,0 +1,10 @@
+{
+  "name": "compile-make-sandbox",
+  "version": "1.0.0",
+  "description": "Try compiling and make command",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build -t compile-make-sandbox .",
+    "docker:run": "docker run -it --rm --name compile-make-sandbox -v $(pwd):/workspace compile-make-sandbox"
+  }
+}
