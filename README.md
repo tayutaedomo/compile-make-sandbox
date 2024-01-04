@@ -36,3 +36,7 @@ rm -f *.o main
 
 ## c-greet-lib
 [c-greet-lib/README.md](./c-greet-lib/README.md)
+
+
+## c-greet-module
+[c-greet-module/README.md](./c-greet-module/README.md)
