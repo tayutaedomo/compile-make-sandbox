@@ -8,3 +8,5 @@ set_target_properties(main PROPERTIES
     C_STANDARD 99
     C_STANDARD_REQUIRED TREU
 )
+
+install(TARGETS main DESTINATION bin)
