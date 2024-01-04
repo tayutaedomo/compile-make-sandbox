@@ -1,5 +1,5 @@
 # compile-make-sandbox
-Try compiling and make command
+Try compiling and make/cmake command.
 
 
 ## docker
@@ -23,7 +23,7 @@ rm -f *.o main
 ```
 
 
-# c-greet
+## c-greet
 ```bash
 $ cd c-greet
 $ make
@@ -31,7 +31,7 @@ $ ./main
 $ make clean
 ```
 
-# c-greet-cmake
+## c-greet-cmake
 ```bash
 $ cd c-greet-cmake
 $ mkdir -p build && cd build
