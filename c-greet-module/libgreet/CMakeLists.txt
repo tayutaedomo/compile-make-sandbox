@@ -1,24 +1,29 @@
 cmake_minimum_required(VERSION 3.10)
 project(GreetLib VERSION 1.0 LANGUAGES C)
 
-add_library(greet-lib SHARED src/greet-lib.c)
+add_library(greet-lib-shared SHARED src/greet-lib.c)
 add_library(greet-lib-static STATIC src/greet-lib.c)
 
-set_target_properties(greet-lib PROPERTIES
+target_include_directories(greet-lib-shared PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+target_include_directories(greet-lib-static PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
+set_target_properties(greet-lib-shared PROPERTIES
+    OUTPUT_NAME "greet-lib"
     PUBLIC_HEADER include/greet-lib.h
     VERSION ${PROJECT_VERSION}
     SOVERSION 1
 )
 set_target_properties(greet-lib-static PROPERTIES
-    OUTPUT_NAME greet-lib
+    OUTPUT_NAME "greet-lib"
 )
 
-target_include_directories(greet-lib PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include>
-)
-
-install(TARGETS greet-lib greet-lib-static
+install(TARGETS greet-lib-shared greet-lib-static
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
     PUBLIC_HEADER DESTINATION include
