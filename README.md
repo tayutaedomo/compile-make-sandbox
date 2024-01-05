@@ -40,3 +40,7 @@ rm -f *.o main
 
 ## c-greet-module
 [c-greet-module/README.md](./c-greet-module/README.md)
+
+
+## c-greet-pkgconfig
+[c-greet-pkgconfig/README.md](./c-greet-pkgconfig/README.md)
