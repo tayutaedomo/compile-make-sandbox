@@ -35,6 +35,7 @@ Install the project...
 -- Installing: /usr/local/lib/libgreet-lib.so.1
 -- Installing: /usr/local/lib/libgreet-lib.so
 -- Installing: /usr/local/include/greet-lib.h
+-- Installing: /usr/local/lib/pkgconfig/greet-lib.pc
 
 $ ./main
 Hello, World!
@@ -46,6 +47,7 @@ $ make uninstall
 -- Removing: /usr/local/lib/libgreet-lib.so
 -- Already removed: /usr/local/lib/libgreet-lib.so
 -- Removing: /usr/local/include/greet-lib.h
+-- Removing: /usr/local/lib/pkgconfig/greet-lib.pc
 Built target uninstall
 
 $ ./main

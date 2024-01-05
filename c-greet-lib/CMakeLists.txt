@@ -32,3 +32,10 @@ target_link_libraries(main PRIVATE greet-lib)
 add_custom_target(uninstall
     COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake_uninstall.cmake
 )
+
+
+# pkg-config
+set(PKG_CONFIG_FILE "${CMAKE_CURRENT_BINARY_DIR}/greet-lib.pc")
+configure_file(${CMAKE_SOURCE_DIR}/greet-lib.pc.in ${PKG_CONFIG_FILE} @ONLY)
+
+install(FILES ${PKG_CONFIG_FILE} DESTINATION lib/pkgconfig)
