@@ -63,3 +63,11 @@ rm -f main
 
 ## fortran-greet
 [fortran-greet/README.md](./fortran-greet/README.md)
+
+
+## fortran-greet-cmake
+[fortran-greet-cmake/README.md](./fortran-greet-cmake/README.md)
+
+
+## fortran-greet-shared
+[fortran-greet-shared/README.md](./fortran-greet-shared/README.md)
