@@ -71,3 +71,7 @@ rm -f main
 
 ## fortran-greet-shared
 [fortran-greet-shared/README.md](./fortran-greet-shared/README.md)
+
+
+## fortran-greet-static
+[fortran-greet-static/README.md](./fortran-greet-static/README.md)
