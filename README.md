@@ -44,3 +44,18 @@ rm -f *.o main
 
 ## c-greet-pkgconfig
 [c-greet-pkgconfig/README.md](./c-greet-pkgconfig/README.md)
+
+
+## fortran-main
+
+```bash
+$ cd fortran-mai
+$ make
+gfortran -Wall -Wextra -O2 -o main main.f90
+
+$ ./main
+ Hello, world!
+
+$ make clean
+rm -f main
+```
