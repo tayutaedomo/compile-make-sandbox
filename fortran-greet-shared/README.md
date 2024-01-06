@@ -29,6 +29,42 @@ Install the project...
 -- Installing: /usr/local/include/greet_module.mod
 ```
 
+### -fPIC
+
+```bash
+$ make VERBOSE=1
+/usr/bin/cmake -S/workspace/fortran-greet-shared/libgreet -B/workspace/fortran-greet-shared/libgreet/build --check-build-system CMakeFiles/M
+akefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /workspace/fortran-greet-shared/libgreet/build/CMakeFiles /workspace/fortran-greet-shared/libgreet/bu
+ild//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/workspace/fortran-greet-shared/libgreet/build'
+make  -f CMakeFiles/greet.dir/build.make CMakeFiles/greet.dir/depend
+make[2]: Entering directory '/workspace/fortran-greet-shared/libgreet/build'
+cd /workspace/fortran-greet-shared/libgreet/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/fortran-greet-shared/libgre
+et /workspace/fortran-greet-shared/libgreet /workspace/fortran-greet-shared/libgreet/build /workspace/fortran-greet-shared/libgreet/build /w
+orkspace/fortran-greet-shared/libgreet/build/CMakeFiles/greet.dir/DependInfo.cmake --color=
+Dependee "/workspace/fortran-greet-shared/libgreet/build/CMakeFiles/greet.dir/DependInfo.cmake" is newer than depender "/workspace/fortran-g
+reet-shared/libgreet/build/CMakeFiles/greet.dir/depend.internal".
+Dependee "/workspace/fortran-greet-shared/libgreet/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/workspace/fort
+ran-greet-shared/libgreet/build/CMakeFiles/greet.dir/depend.internal".
+Scanning dependencies of target greet
+make[2]: Leaving directory '/workspace/fortran-greet-shared/libgreet/build'
+make  -f CMakeFiles/greet.dir/build.make CMakeFiles/greet.dir/build
+make[2]: Entering directory '/workspace/fortran-greet-shared/libgreet/build'
+[ 50%] Building Fortran object CMakeFiles/greet.dir/greet.f90.o
+/usr/bin/f95 -Dgreet_EXPORTS  -Jmod -fPIC -c /workspace/fortran-greet-shared/libgreet/greet.f90 -o CMakeFiles/greet.dir/greet.f90.o
+/usr/bin/cmake -E cmake_copy_f90_mod mod/greet_module.mod CMakeFiles/greet.dir/greet_module.mod.stamp GNU
+/usr/bin/cmake -E touch CMakeFiles/greet.dir/greet.f90.o.provides.build
+[100%] Linking Fortran shared library libgreet.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/greet.dir/link.txt --verbose=1
+/usr/bin/f95 -fPIC -shared -Wl,-soname,libgreet.so -o libgreet.so CMakeFiles/greet.dir/greet.f90.o
+make[2]: Leaving directory '/workspace/fortran-greet-shared/libgreet/build'
+[100%] Built target greet
+make[1]: Leaving directory '/workspace/fortran-greet-shared/libgreet/build'
+/usr/bin/cmake -E cmake_progress_start /workspace/fortran-greet-shared/libgreet/build/CMakeFiles 0
+```
+
 
 ## app
 
