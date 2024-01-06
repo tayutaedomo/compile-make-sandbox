@@ -49,7 +49,7 @@ rm -f *.o main
 ## fortran-main
 
 ```bash
-$ cd fortran-mai
+$ cd fortran-main
 $ make
 gfortran -Wall -Wextra -O2 -o main main.f90
 
@@ -59,3 +59,7 @@ $ ./main
 $ make clean
 rm -f main
 ```
+
+
+## fortran-greet
+[fortran-greet/README.md](./fortran-greet/README.md)
